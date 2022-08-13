@@ -1,0 +1,739 @@
+.banner-container {
+  padding: 4rem 0 0 0;
+  display: flex;
+  margin-top: 0rem;
+  justify-content: space-between;
+}
+
+.banner-container .headings-section {
+  width: 60%;
+  margin: 3.5rem 0;
+}
+
+.banner-container .headings-section h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 84px;
+  color: #201d24;
+  padding-right: 4rem;
+  margin-bottom: 0px;
+}
+
+.banner-container .headings-section p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  padding-right: 4rem;
+  padding-top: 0px;
+}
+
+.banner-container .headings-section button {
+  background: #201d24;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0.5rem 3rem;
+}
+
+.banner-container .banner-image {
+  width: 40%;
+}
+
+.neo-work-section {
+  background: #fbf7f4;
+}
+
+.neo-work-section .container {
+  display: flex;
+  align-items: center;
+}
+
+.neo-work-section .steps {
+  width: 20%;
+  padding: 2rem 1rem;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.neo-work-section .steps h3 {
+  font-size: 24px;
+}
+.neo-work-section .steps .image {
+  display: inline-block;
+  margin-right: 1rem;
+  width: 42px;
+}
+
+.reward-container {
+  padding: 2rem 1rem;
+}
+
+.reward-container .heading-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reward-container .heading-section .heading {
+  width: 75%;
+  padding: 3rem 1rem 1rem 8rem;
+}
+
+.reward-container .heading-section .heading h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  color: #201d24;
+}
+
+.reward-container .heading-section .image {
+  width: 25%;
+}
+
+.reward-steps .progressbar {
+  counter-reset: step;
+}
+.reward-steps .progressbar li {
+  list-style: none;
+  display: inline-block;
+  width: 24%;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+.reward-steps .progressbar li span {
+  display: inline-block;
+  background: #043458;
+  color: #fff;
+  width: 60px;
+  height: 40px;
+  border-radius: 50%;
+  padding-top: 20px;
+  margin-top: -12px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.reward-steps .progressbar li:last-child span {
+  display: inline-block;
+  background: #043458;
+  color: #fff;
+  width: 300px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 16px;
+  padding-top: 20px;
+}
+/* .reward-steps .progressbar li:before {
+} */
+.reward-steps .progressbar li:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+.reward-steps .progressbar li:first-child:after {
+  content: none;
+}
+.reward-steps .progressbar li.active {
+  color: green;
+}
+.reward-steps .progressbar li.active:before {
+  border-color: green;
+}
+.reward-steps .progressbar li.active + li:after {
+  background-color: green;
+}
+
+.reward-steps-desc {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.reward-steps-desc .first-step,
+.second-step,
+.third-step,
+.fourth-step {
+  width: 200px;
+  height: 100px;
+  font-weight: 510;
+  font-size: 8px;
+  line-height: 10px;
+  background: #ffffff;
+  box-shadow: -3px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.reward-steps-desc .first-step > .title,
+.second-step > .title {
+  font-weight: 400;
+}
+
+.reward-steps-desc > .first-step > .table {
+  text-align: left;
+  border: 1px solid #eee;
+  margin: 1rem 0;
+}
+.reward-steps-desc > .first-step > .table > .val {
+  border-right: 1px solid #eee;
+  padding: 1rem 0.5rem;
+  width: 70px;
+  display: inline-block;
+}
+
+.reward-steps-desc .first-step .table .label {
+  width: 30px;
+  display: inline-block;
+  padding-left: 0.5rem;
+}
+.reward-steps-desc .first-step,
+.second-step,
+.third-step,
+.fourth-step > .progressbar {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  margin: 1rem 0;
+}
+.footer-text {
+  font-weight: 400;
+}
+
+.reward-steps-desc .second-step > .value {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  margin: 1rem 0;
+}
+.reward-steps-desc .second-step,
+.progressbar {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  margin: 1rem 0;
+}
+
+.reward-steps-desc .third-step .title {
+  padding-top: 1rem;
+}
+
+.reward-steps-desc .third-step .value {
+  padding-top: 1rem;
+}
+
+.reward-steps-desc .third-step .footer-text .image {
+  display: inline-block;
+}
+
+.reward-steps-desc .third-step .footer-text .label {
+  display: inline-block;
+  position: relative;
+  top: -6px;
+}
+.reward-steps-desc .fourth-step {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  margin: 1rem 0;
+}
+
+.reward-steps-desc .fourth-step .title {
+  padding-bottom: 1rem;
+}
+.reward-steps-desc .fourth-step .title .image {
+  display: inline-block;
+}
+
+.reward-steps-desc .fourth-step .title .label {
+  display: inline-block;
+  position: relative;
+  top: -6px;
+}
+
+.saving-experience-container {
+  background: #e0e9f1;
+  padding: 2rem;
+}
+
+.saving-experience-container .container {
+  padding-bottom: 2rem;
+}
+
+.saving-experience-container .container .heading {
+  width: 60%;
+  margin: 2rem auto 3rem auto;
+}
+
+.saving-experience-container .container .heading h3 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: #000000;
+}
+
+.saving-experience-container .container .experience-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.saving-experience-container .container .experience-section .experience {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  width: 28%;
+  padding: 1rem;
+}
+
+.saving-experience-container
+  .container
+  .experience-section
+  .experience
+  .header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.saving-experience-container
+  .container
+  .experience-section
+  .experience
+  .header
+  .image {
+  width: 56px;
+  padding: auto 1rem;
+  margin-right: 2rem;
+}
+
+.saving-experience-container
+  .container
+  .experience-section
+  .experience
+  .header
+  .text {
+  width: 50%;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.saving-experience-container .container .experience-section .experience .desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 1rem;
+}
+
+.carousel__wrapper {
+  padding: 20px;
+}
+.carousel__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.carousel__container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+.carousel__container::-webkit-scrollbar {
+  display: none;
+}
+.carousel__slide {
+  min-width: 90%;
+}
+.card__description {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.card__description img {
+  width: 20px;
+}
+.card__description span {
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+.card__description span.fire {
+  background-color: orange;
+}
+.card__description span.psychic {
+  background-color: rgb(146, 100, 108);
+}
+.card__description span.electric {
+  background-color: rgb(231, 210, 88);
+}
+.card__description span.rock {
+  background-color: rgb(114, 102, 32);
+}
+.card__description span.grass {
+  background-color: rgb(32, 114, 69);
+}
+
+.card__inner {
+  background: #ffffff;
+  box-shadow: -3px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  min-height: 140px;
+  width: 300px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 1rem;
+}
+.card__inner h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: #000;
+}
+.card__image img {
+  max-height: 150px;
+  margin-bottom: 1rem;
+}
+.arrow {
+  display: none;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: calc(50% - 10px);
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.arrow i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.arrow.arrow--right {
+  right: -5%;
+}
+.arrow.arrow--left {
+  left: -5%;
+}
+.arrow {
+  display: flex;
+}
+
+.mobile-reward-ui {
+  display: none;
+}
+
+@media screen and (max-width: 1201px) {
+  .reward-steps-desc .first-step,
+  .second-step,
+  .third-step,
+  .fourth-step {
+    width: 200px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .carousel__slide {
+    min-width: 92%;
+  }
+  .carousel__wrapper {
+    padding: 6rem;
+  }
+  .carousel__slide .card .card__inner {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .carousel__slide .card .card__inner p {
+    font-size: 27.6893px;
+    line-height: 42px;
+    text-align: center;
+  }
+  .banner-container {
+    padding-top: 1rem;
+  }
+  .banner-container .headings-section {
+    margin: 0.5rem 0;
+  }
+  .banner-container .headings-section h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+  }
+
+  .banner-container .headings-section p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    padding-right: 4rem;
+    padding-top: 0px;
+  }
+  .banner-container .headings-section button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .neo-work-section .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .neo-work-section .container .steps:nth-child(1) {
+    justify-content: center;
+    left: 0;
+  }
+  .neo-work-section .container .steps {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 30%;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .reward-container .heading-section {
+    flex-direction: column;
+  }
+  .reward-container .heading-section .heading {
+    width: 100%;
+    padding: 1rem 0px;
+    text-align: center;
+  }
+  .reward-container .heading-section .heading h2 {
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .reward-steps .progressbar li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(221, 221, 221);
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+    transform: rotate(90deg);
+  }
+
+  .reward-container .heading-section .image {
+    display: none;
+  }
+
+  .reward-steps .progressbar li:nth-child(3):after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(221, 221, 221);
+    top: 255px;
+    left: -50%;
+    z-index: -1;
+    transform: rotate(90deg);
+  }
+  .reward-steps .progressbar li:nth-child(4):after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(221, 221, 221);
+    top: 134px;
+    left: -50%;
+    z-index: -1;
+    transform: rotate(90deg);
+  }
+
+  .reward-steps .progressbar li {
+    list-style: none;
+    display: block;
+    width: 24%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .reward-steps .progressbar li span {
+    padding-top: 20px;
+    margin-top: -12px;
+    font-weight: 700;
+    left: -50%;
+    top: -42px;
+    position: relative;
+  }
+  .reward-steps .progressbar li:nth-child(1) span {
+    padding-top: 20px;
+    margin-top: -12px;
+    font-weight: 700;
+    left: -50%;
+    top: -66px;
+    position: relative;
+  }
+  .reward-steps .progressbar li:nth-child(2) span {
+    padding-top: 20px;
+    margin-top: -12px;
+    font-weight: 700;
+    left: -50%;
+    top: 100px;
+    position: relative;
+  }
+  .reward-steps .progressbar li:nth-child(3) span {
+    padding-top: 20px;
+    margin-top: -12px;
+    font-weight: 700;
+    left: -50%;
+    top: 300px;
+    position: relative;
+  }
+
+  .reward-steps {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 9rem;
+    margin-left: 20%;
+  }
+
+  .reward-steps .progressbar li:nth-child(4) span {
+    display: none;
+  }
+
+  .reward-steps-desc {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 90%;
+    flex-direction: column;
+    margin: 0 auto;
+    position: absolute;
+    top: 16vh;
+    left: 40%;
+  }
+
+  .reward-steps-desc .second-step {
+    margin: 3rem 0;
+  }
+
+  .reward-steps-desc .fourth-step {
+    display: none;
+  }
+  .reward-container {
+    position: relative;
+  }
+
+  .mobile-reward-ui {
+    display: block;
+    text-align: center;
+    margin-top: 46vh;
+  }
+  .mobile-reward-ui .progressbar-last-count {
+    background: #043458;
+    color: #fff;
+    width: 300px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 16px;
+    padding-top: 20px;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .mobile-reward-ui .cycle-image {
+    width: 40%;
+    margin: 2rem auto;
+  }
+
+  .mobile-reward-ui .fourth-step {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    margin: 1rem auto;
+  }
+
+  .mobile-reward-ui .fourth-step .title {
+    padding-bottom: 1rem;
+  }
+  .mobile-reward-ui .fourth-step .title .image {
+    display: inline-block;
+  }
+
+  .mobile-reward-ui .fourth-step .title .label {
+    display: inline-block;
+    position: relative;
+    top: -6px;
+  }
+
+  .saving-experience-container .container .heading h3 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+  }
+
+  .saving-experience-container .container .experience-section {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding-left: 0px;
+  }
+  .saving-experience-container .container .experience-section .experience {
+    width: 378px;
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel__wrapper {
+    padding: 1rem;
+  }
+  .carousel__slide .card .card__inner {
+    padding: 0px;
+    margin: 0px;
+  }
+  .carousel__slide .card .card__inner p {
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .carousel__slide {
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .carousel__wrapper {
+    padding: 50px;
+  }
+  .carousel__slide {
+    min-width: 33.33%;
+    scroll-snap-align: center;
+    position: relative;
+  }
+}
