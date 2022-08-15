@@ -9,6 +9,9 @@
   width: 60%;
   margin: 3.5rem 0;
 }
+.hide-mobile {
+  display: block;
+}
 
 .banner-container .headings-section h1 {
   font-weight: 700;
@@ -509,10 +512,10 @@
     left: 0;
   }
   .neo-work-section .container .steps {
-    width: 100%;
+    width: 500px;
     text-align: center;
     position: relative;
-    left: 30%;
+    left: 13%;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -535,11 +538,11 @@
   .reward-steps .progressbar li::after {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 1px;
+    width: 150%;
+    height: 2px;
     background-color: rgb(221, 221, 221);
     top: 15px;
-    left: -50%;
+    left: -75%;
     z-index: -1;
     transform: rotate(90deg);
   }
@@ -551,11 +554,11 @@
   .reward-steps .progressbar li:nth-child(3):after {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 1px;
+    width: 150%;
+    height: 2px;
     background-color: rgb(221, 221, 221);
-    top: 255px;
-    left: -50%;
+    top: 192px;
+    left: -75%;
     z-index: -1;
     transform: rotate(90deg);
   }
@@ -628,7 +631,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    width: 90%;
+    width: 300px;
     flex-direction: column;
     margin: 0 auto;
     position: absolute;
@@ -709,6 +712,204 @@
 }
 
 @media screen and (max-width: 768px) {
+  #menuToggl {
+    display: block;
+  }
+  .dsktop-nav {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+  .banner-container {
+    padding: 3rem 1rem;
+  }
+  .banner-container .headings-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner-container .headings-section h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    padding-right: 0px;
+  }
+  .banner-container .headings-section p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 0px;
+    text-align: center;
+  }
+
+  .neo-work-section .container .steps {
+    left: 0px;
+    max-width: 300px;
+  }
+
+  .neo-work-section .container .steps {
+    text-align: left;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .reward-container .heading-section .heading h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .reward-steps {
+    margin-left: 0px;
+  }
+
+  .reward-steps .progressbar li:nth-child(1) span {
+    top: -86px;
+  }
+  .reward-steps .progressbar li:nth-child(2) span {
+    top: -16px;
+  }
+  .reward-steps .progressbar li:nth-child(3) span {
+    top: 46px;
+  }
+
+  .reward-steps .progressbar li::after {
+    top: -50px;
+  }
+
+  .reward-steps .progressbar li:nth-child(3):after {
+    top: 24px;
+  }
+
+  .reward-steps .progressbar li:nth-child(4):after {
+    display: none;
+  }
+
+  .reward-steps-desc {
+    left: 24%;
+    top: 20vh;
+  }
+
+  .reward-steps-desc .first-step,
+  .second-step,
+  .third-step,
+  .fourth-step {
+    width: 136px;
+    height: 64px;
+    text-align: center;
+    padding: 12px;
+    font-size: 6px !important;
+  }
+
+  .reward-steps-desc .first-step > .title,
+  .second-step > .title {
+    font-weight: 400;
+  }
+
+  .reward-steps-desc > .first-step > .table {
+    text-align: left;
+    border: 1px solid #eee;
+    margin: 8px 0;
+  }
+  .reward-steps-desc > .first-step > .table > .val {
+    border-right: 1px solid #eee;
+    padding: 8px 0.5rem;
+    width: 74px;
+    display: inline-block;
+  }
+
+  .reward-steps-desc .first-step .table .label {
+    width: 30px;
+    display: inline-block;
+    padding-left: 0.5rem;
+  }
+  .reward-steps-desc .first-step,
+  .second-step,
+  .third-step,
+  .fourth-step > .progressbar {
+    margin: 1rem 0;
+  }
+  .footer-text {
+    font-weight: 400;
+  }
+
+  .reward-steps-desc .second-step > .value {
+    margin: 8px 0;
+    font-size: 6px;
+  }
+  .reward-steps-desc .second-step,
+  .progressbar {
+    margin: 8px 0;
+    font-size: 6px;
+  }
+
+  .reward-steps-desc .third-step .title {
+    padding-top: 8px;
+  }
+
+  .reward-steps-desc .third-step .value {
+    padding-top: 8px;
+  }
+
+  .reward-steps-desc .third-step .footer-text {
+    display: flex;
+  }
+
+  .reward-steps-desc .third-step .footer-text .image {
+    display: block;
+  }
+
+  .reward-steps-desc .third-step .footer-text .label {
+    display: block;
+    position: relative;
+    top: 16px;
+  }
+  .reward-steps-desc .fourth-step {
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 10px;
+    margin: 8px 0;
+  }
+
+  .reward-steps-desc .fourth-step .title {
+    padding-bottom: 8px;
+  }
+  .reward-steps-desc .fourth-step .title .image {
+    display: inline-block;
+  }
+
+  .reward-steps-desc .fourth-step .title .label {
+    display: inline-block;
+    position: relative;
+    top: -6px;
+  }
+
+  .mobile-reward-ui {
+    margin-top: 12vh;
+  }
+  .saving-experience-container .container .heading {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .saving-experience-container .container .heading h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+  }
+
+  .saving-experience-container .container .experience-section {
+    width: 100%;
+  }
+
+  .saving-experience-container .container .experience-section .experience {
+    width: auto;
+  }
+
   .carousel__wrapper {
     padding: 1rem;
   }
@@ -724,6 +925,19 @@
 
   .carousel__slide {
     min-width: 100%;
+  }
+  .arrow {
+    width: 24px;
+  }
+
+  footer > .container {
+    flex-direction: column;
+  }
+
+  footer > .container > .heading,
+  .nav,
+  .contact {
+    width: 100%;
   }
 }
 
