@@ -792,6 +792,7 @@
   .reward-steps-desc {
     left: 24%;
     top: 20vh;
+    width: 150px;
   }
 
   .reward-steps-desc .first-step,

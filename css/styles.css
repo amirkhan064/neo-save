@@ -85,25 +85,32 @@ header .header-container ul {
 }
 
 header .header-container ul li {
+  margin-top: 2rem;
+  list-style: none;
   width: 100px;
   border: 1px solid #eee;
   text-align: center;
   padding: 0.3rem 1rem;
-  list-style: none;
   border-radius: 16px;
   cursor: pointer;
 }
 
-header .header-container ul li:active {
+header .header-container ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+header .header-container ul .active {
   background: #f3e0ac;
 }
 
 header .header-container ul li:hover {
   background: #f3e0ac;
-}
-
-#menuToggl {
-  display: none;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 16px;
+  cursor: pointer;
 }
 
 .dsktop-nav {
@@ -111,7 +118,7 @@ header .header-container ul li:hover {
 }
 
 #menuToggle {
-  display: block;
+  display: none;
   position: absolute;
   top: 24px;
   right: 16px;
@@ -279,5 +286,11 @@ footer .sub-footer {
   header .header-container .logo-container .logo {
     width: 90px;
     margin: 1.5rem 2.5rem 0 1rem;
+  }
+  #menuToggle {
+    display: block;
+  }
+  .dsktop-nav {
+    display: none;
   }
 }
