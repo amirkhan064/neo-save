@@ -13,6 +13,13 @@ button {
   border: none;
 }
 
+.hideMenu {
+  display: none;
+}
+.hide-mobile {
+  display: none;
+}
+
 h1,
 h2,
 h3,
@@ -78,13 +85,13 @@ header .header-container nav {
   width: 40%;
 }
 
-header .header-container ul {
+header .header-container .desktop-nav {
   display: flex;
   justify-content: space-between;
   padding: 0px;
 }
 
-header .header-container ul li {
+header .header-container .desktop-nav li {
   margin-top: 2rem;
   list-style: none;
   width: 100px;
@@ -95,16 +102,16 @@ header .header-container ul li {
   cursor: pointer;
 }
 
-header .header-container ul li a {
+header .header-container .desktop-nav li a {
   color: #000;
   text-decoration: none;
 }
 
-header .header-container ul .active {
+header .header-container .desktop-nav .active {
   background: #f3e0ac;
 }
 
-header .header-container ul li:hover {
+header .header-container .desktop-nav li:hover {
   background: #f3e0ac;
   color: #000;
   text-decoration: none;
@@ -177,15 +184,14 @@ header .header-container ul li:hover {
   opacity: 1;
   transform: rotate(-45deg) translate(0, -1px);
 }
-
 #menu {
   position: absolute;
   width: 300px;
   height: 100vh;
   margin: -100px 0 0 0;
-  padding: 50px;
+  padding: 50px 0px;
   padding-top: 125px;
-  right: -100px;
+  right: -14px;
   background: #fff;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -193,7 +199,6 @@ header .header-container ul li:hover {
   transform: translate(100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   box-shadow: 4px 23px 14px 2px #00000054;
-  display: block;
 }
 
 header .header-container #menu li a {
@@ -279,10 +284,11 @@ footer .sub-footer {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   header {
     box-shadow: none;
   }
+
   header .header-container .logo-container .logo {
     width: 90px;
     margin: 1.5rem 2.5rem 0 1rem;

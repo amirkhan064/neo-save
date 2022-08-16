@@ -9,9 +9,6 @@
   width: 60%;
   margin: 3.5rem 0;
 }
-.hide-mobile {
-  display: block;
-}
 
 .banner-container .headings-section h1 {
   font-weight: 700;
@@ -635,7 +632,7 @@
     flex-direction: column;
     margin: 0 auto;
     position: absolute;
-    top: 16vh;
+    top: 11rem;
     left: 40%;
   }
 
@@ -653,7 +650,7 @@
   .mobile-reward-ui {
     display: block;
     text-align: center;
-    margin-top: 46vh;
+    margin-top: 26rem;
   }
   .mobile-reward-ui .progressbar-last-count {
     background: #043458;
@@ -711,17 +708,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  #menuToggl {
-    display: block;
-  }
-  .dsktop-nav {
-    display: none;
-  }
-
-  .hide-mobile {
-    display: none;
-  }
+@media screen and (max-width: 600px) {
   .banner-container {
     padding: 3rem 1rem;
   }
@@ -790,8 +777,8 @@
   }
 
   .reward-steps-desc {
-    left: 24%;
-    top: 20vh;
+    left: 34%;
+    top: 10.5rem;
     width: 150px;
   }
 
@@ -890,7 +877,7 @@
   }
 
   .mobile-reward-ui {
-    margin-top: 12vh;
+    margin-top: 8rem;
   }
   .saving-experience-container .container .heading {
     width: 100%;

@@ -38,16 +38,16 @@
           <div class="logo">
             <img src="../images/logo-black.png" />
           </div>
-          <div class="language-selector">
+          <div class="language-selector hide-mobile">
             <span class="icon"><img src="../images/Vector.png" /></span>
             <span class="text">DE</span>
           </div>
         </div>
 
-        <nav>
-          <ul>
-            <li><a href="/home">Home</a></li>
-            <li class="active"><a href="/business">For Business</a></li>
+        <nav class="dsktop-nav">
+          <ul class="desktop-nav">
+            <li class="active"><a href="/home">Home</a></li>
+            <li><a href="/business">For Business</a></li>
             <li><a href="#">Blog</a></li>
           </ul>
         </nav>
@@ -56,7 +56,7 @@
           <span></span>
           <span></span>
           <span></span>
-          <ul id="menu">
+          <ul id="menu" class="hideMenu">
             <li><a href="/home">Home</a></li>
             <li><a href="/business">For Business</a></li>
             <li><a href="#">Blog</a></li>
@@ -86,7 +86,7 @@
             </div>
           </div>
         </div>
-        <div class="banner-image">
+        <div class="banner-image hide-mobile">
           <img src="../images/business-banner.png" />
         </div>
       </div>
@@ -237,33 +237,39 @@
               <div class="option-image">
                 <img src="../images/marketing 1.png" alt="" />
               </div>
-              <h4>Define your savings offerings</h4>
-              <p>
-                You can define products and %discounts you want to offer to
-                saving customers.
-              </p>
+              <div class="desc">
+                <h4>Define your savings offerings</h4>
+                <p>
+                  You can define products and %discounts you want to offer to
+                  saving customers.
+                </p>
+              </div>
             </div>
 
             <div class="option">
               <div class="option-image">
                 <img src="../images/social-marketing 1.png" alt="" />
               </div>
-              <h4>Provide the no code savings link to your customers.</h4>
-              <p>
-                Embed the link on your email campaigns, social media posts or
-                any other channel.
-              </p>
+              <div class="desc">
+                <h4>Provide the no code savings link to your customers.</h4>
+                <p>
+                  Embed the link on your email campaigns, social media posts or
+                  any other channel.
+                </p>
+              </div>
             </div>
 
             <div class="option">
               <div class="option-image">
                 <img src="../images/dashboard 1.png" alt="" />
               </div>
-              <h4>Track customers saving up to purchase from you.</h4>
-              <p>
-                You get real-time analytics of customers saving up for purchase
-                from you.
-              </p>
+              <div class="desc">
+                <h4>Track customers saving up to purchase from you.</h4>
+                <p>
+                  You get real-time analytics of customers saving up for
+                  purchase from you.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -378,4 +384,14 @@
       </div>
     </footer>
   </body>
+  <script type="text/javascript">
+    const toggleItems = document.getElementById('menu');
+    const toggleButton = document.getElementById('menuToggle');
+
+    (function () {
+      toggleButton.addEventListener('click', () => {
+        toggleItems.classList.toggle('hideMenu');
+      });
+    })();
+  </script>
 </html>

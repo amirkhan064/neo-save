@@ -41,7 +41,7 @@
         </div>
 
         <nav class="dsktop-nav">
-          <ul>
+          <ul class="desktop-nav">
             <li class="active"><a href="/home">Home</a></li>
             <li><a href="/business">For Business</a></li>
             <li><a href="#">Blog</a></li>
@@ -52,7 +52,7 @@
           <span></span>
           <span></span>
           <span></span>
-          <ul id="menu">
+          <ul id="menu" class="hideMenu">
             <li><a href="/home">Home</a></li>
             <li><a href="/business">For Business</a></li>
             <li><a href="#">Blog</a></li>
@@ -396,4 +396,14 @@
   </body>
   <!-- <script type="text/javascript" src="../js/main.js"></script> -->
   <script type="text/javascript" src="../js/testimonial-slider.js"></script>
+  <script type="text/javascript">
+    const toggleItems = document.getElementById('menu');
+    const toggleButton = document.getElementById('menuToggle');
+
+    (function () {
+      toggleButton.addEventListener('click', () => {
+        toggleItems.classList.toggle('hideMenu');
+      });
+    })();
+  </script>
 </html>
