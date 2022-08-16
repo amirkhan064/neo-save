@@ -414,6 +414,9 @@
     line-height: 24px;
     padding: 1rem 0;
   }
+  .banner-container .headings-section .request-demo .request-demo-button {
+    width: auto;
+  }
   .banner-container
     .headings-section
     .request-demo
@@ -595,6 +598,9 @@
   .features-section .container .feature .feature-image {
     margin: 0rem;
   }
+  .features-section .container .feature .feature-image img {
+    max-width: 100%;
+  }
   .features-section .container .feature .feature-image,
   .feature-desc {
     width: 100%;
@@ -699,6 +705,7 @@
   .how-it-works .container .option-container .option {
     display: flex;
     margin: 0.5rem 0;
+    width: 100%;
   }
   .how-it-works .container .option-container .option .option-image img {
     width: 40px;
