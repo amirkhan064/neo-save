@@ -17,7 +17,7 @@ button {
   display: none;
 }
 .hide-mobile {
-  display: none;
+  display: block;
 }
 
 h1,
@@ -282,11 +282,23 @@ footer .sub-footer {
   header .header-container nav {
     width: 50%;
   }
+  footer > .container .nav ul li,
+  footer > .container .contact ul li .text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 11px;
+  }
+  footer > .container .contact ul li .text {
+    font-weight: 500;
+  }
 }
 
 @media screen and (max-width: 600px) {
   header {
     box-shadow: none;
+  }
+  .hide-mobile {
+    display: none;
   }
 
   header .header-container .logo-container .logo {

@@ -369,6 +369,7 @@
   .banner-container {
     padding-top: 1rem;
   }
+
   .banner-container .headings-section {
     margin: 0.5rem 1rem;
   }
@@ -387,7 +388,7 @@
   }
   .banner-container .headings-section button {
     font-weight: 700;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 21px;
   }
 
@@ -399,6 +400,10 @@
     justify-content: center;
     left: 0;
   }
+
+  .neo-work-section .container {
+    padding: 1rem 0;
+  }
   .neo-work-section .container .steps {
     width: 500px;
     text-align: center;
@@ -407,13 +412,133 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
+    padding: 1rem 0;
+  }
+  .banner-container
+    .headings-section
+    .request-demo
+    .request-demo-button
+    button {
+    padding: 0.8rem 1.5rem;
+    font-size: 12px;
+  }
+  .banner-container .headings-section .request-demo .request-demo-text input {
+    font-size: 14px;
+  }
+  .banner-container .headings-section .request-demo .request-demo-text {
+    width: 50%;
+    /* margin: 0px; */
+  }
+  .banner-container .headings-section .request-demo {
+    margin-top: 2rem;
+  }
+
+  .how-it-works .container .option-container .option {
+    min-width: auto;
+  }
+
+  .features-section .container .feature,
+  .features-section .container .feature-savings {
+    width: 90%;
+  }
+
+  .features-section .container .feature .feature-desc h4 {
+    font-weight: 500;
+    font-size: 18.9433px;
+    line-height: 28px;
+  }
+  .features-section .container .feature .feature-desc p {
+    font-weight: 300;
+    font-size: 13.5309px;
+    line-height: 20px;
+  }
+  .features-section .container .feature-savings h2 {
+    font-size: 27.0618px;
+    line-height: 41px;
+    text-align: center;
+  }
+  .features-section
+    .container
+    .feature-savings
+    .feature-savings-details
+    .feature-savings-list
+    ul {
+    padding: 0px;
+  }
+  .features-section
+    .container
+    .feature-savings
+    .feature-savings-details
+    .feature-savings-list {
+    margin: 0px;
+  }
+  .features-section
+    .container
+    .feature-savings
+    .feature-savings-details
+    .feature-savings-list
+    ul
+    li {
+    font-weight: 300;
+    font-size: 16.2371px;
+    line-height: 24px;
+  }
+
+  .request-demo-section .container .heading h4 {
+    font-weight: 500;
+    font-size: 13.9188px;
+    line-height: 21px;
+  }
+  .request-demo-section .container .input-box input {
+    font-weight: 600;
+    font-size: 9.27919px;
+    line-height: 14px;
+  }
+  .request-demo-section .container .action button {
+    font-weight: 700;
+    font-size: 9.27919px;
+    line-height: 14px;
+  }
+  .how-it-works .container .option-container .option .option-image img {
+    width: 40px;
+  }
+  .how-it-works .container,
+  .faq-section .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .how-it-works .container .option-container .option h4 {
+    font-weight: 500;
+    font-size: 13.9188px;
+    line-height: 21px;
+  }
+  .how-it-works .container .option-container .option p {
+    font-weight: 300;
+    font-size: 11.599px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .faq-section .container .heading h3 {
+    font-weight: 600;
+    font-size: 23.198px;
+    line-height: 35px;
+  }
+
+  .faq .faq-que .que {
+    font-weight: 500;
+    font-size: 13.9188px;
+    line-height: 21px;
+  }
+  .faq .faq-que .ans {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 9.27919px;
+    line-height: 14px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .hide-mobile {
-    display: none;
-  }
   .banner-container {
     padding: 3rem 1rem;
   }
