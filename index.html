@@ -30,27 +30,28 @@
       rel="stylesheet"
     />
   </head>
-  <script async src=""https://www.googletagmanager.com/gtag/js?id=AW-626630049""></script>
   <script>
-  window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'AW-626630049');
   </script>
   <script>
     function gtag_report_conversion(url) {
       var callback = function () {
-        if (typeof(url) != 'undefined') {
+        if (typeof url != 'undefined') {
           window.location = url;
         }
       };
       gtag('event', 'conversion', {
-          'send_to': 'AW-626630049/uMxBCN2i6c0DEKG75qoC',
-          'event_callback': callback
+        send_to: 'AW-626630049/uMxBCN2i6c0DEKG75qoC',
+        event_callback: callback,
       });
       return false;
     }
-    </script>
+  </script>
   <body>
     <!-- Header section starts here -->
     <header>
