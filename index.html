@@ -1,49 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bootstrap 5 Example</title>
+    <title>Home</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./home/home.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins"
+      rel="stylesheet"
+    />
   </head>
+  <script async src=""https://www.googletagmanager.com/gtag/js?id=AW-626630049""></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-626630049');
+  </script>
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-626630049/uMxBCN2i6c0DEKG75qoC',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
   <body>
-    <div class="container-fluid p-5 bg-primary text-white text-center">
-      <h1>My First Bootstrap Page</h1>
-      <p>Resize this responsive page to see the effect!</p>
-    </div>
+    <!-- Header section starts here -->
+    <header>
+      <div class="header-container container">
+        <div class="logo-container">
+          <div class="logo">
+            <a href="../home"><img src="./images/logo-black.png"/></a>
+          </div>
+          <div class="language-selector hide-mobile">
+            <div class="language-switch">
+              <ul>
+                <li>
+                  <a href="#">
+                    <span class="icon"
+                      ><img src="./images/Vector.png"
+                    /></span>
+                    <span class="text">DE</span></a
+                  >
+                  <ul>
+                    <li>
+                      <a href="./home">
+                        <span class="icon"
+                          ><img src="./images/eng-flag.png"
+                        /></span>
+                        <span class="text">EN</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-sm-4">
-          <h3>Column 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris...
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <h3>Column 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris...
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <h3>Column 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris...
-          </p>
+        <nav class="dsktop-nav">
+          <ul class="desktop-nav">
+            <li class="active"><a href="./de/home/">Startseite</a></li>
+            <li><a href="./de/business/">Für Geschäftskunden</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu" class="hideMenu">
+            <li><a href="/home">Startseite</a></li>
+            <li><a href="/business">Für Geschäftskunden</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
         </div>
       </div>
-    </div>
+    </header>
+    <!-- Header section Ends here -->
+
+    <!-- main content section starts here-->
+
+    <main>
+      <!--  main banner section -->
+      <div class="banner-container container">
+        <div class="headings-section">
+          <h1>Jetzt sparen, später kaufen Geldprämien erhalten.</h1>
+          <p>
+            Sparen Sie in Raten, um von Ihren Lieblingsmarken zu kaufen,
+            verdienen Sie Geldprämien!
+          </p>
+          <button>Jetzt mit dem Sparen beginnen</button>
+        </div>
+        <div class="banner-image hide-mobile">
+          <img src="./images/pexels-monstera-6289171 1.png" />
+        </div>
+      </div>
+
+      <!--  main banner section Ends here-->
+
+      <!-- new work flow section -->
+
+      <div class="neo-work-section">
+        <div class="container">
+          <div class="steps">
+            <h3>Wie es funktionert:</h3>
+          </div>
+          <div class="steps">
+            <span class="image">
+              <img src="./images/target (1) 1.png" />
+            </span>
+            <span>Wählen Sie ein Produkt aus, wofür Sie sparen möchten.</span>
+          </div>
+          <div class="steps">
+            <span class="image">
+              <img src="./images/saving (1) 1.png" />
+            </span>
+            <span>Bestimmen Sie Ihren Sparplan nach Ihrem Wunsch</span>
+          </div>
+          <div class="steps">
+            <span class="image">
+              <img src="./images/shopping-bag 1.png" />
+            </span>
+            <span>Sparen und Geldprämien verdienen</span>
+          </div>
+          <div class="steps">
+            <span class="image">
+              <img src="./images/shopping-bag 2.png"
+            /></span>
+            <span>Kreditfrei mit Prämien kaufen</span>
+          </div>
+        </div>
+      </div>
+      <!-- new work flow section Ends here-->
+
+      <!-- reward section start here -->
+
+      <div class="container reward-container">
+        <div class="heading-section">
+          <div class="heading">
+            <h2>
+              Es ist höchste Zeit, dass nachhaltige <br />
+              schuldfreie Einkäufe belohnt werden!
+            </h2>
+          </div>
+          <div class="image">
+            <img src="./images/uyuhuy 1.svg" />
+          </div>
+        </div>
+        <div class="reward-steps">
+          <ul class="progressbar">
+            <li class="active">
+              <span>€300 </span>
+            </li>
+            <li class="active"><span>€300 </span></li>
+            <li class="active"><span>€300 </span></li>
+            <li class="active">
+              <span>€300 + €300 + €300 = €1200!!!</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="reward-steps-desc">
+          <div class="first-step">
+            <div class="title">Bestimmen Sie Ihren Sparplan</div>
+            <div class="table">
+              <div class="val">€300</div>
+              <div class="label">Monatlich</div>
+            </div>
+            <div class="footer-text">Kaufen Sie Ihr Fahrrad in 3 Monaten</div>
+          </div>
+
+          <div class="second-step">
+            <div class="title">Sie haben Ihre zweite Rate hinzugefügt</div>
+            <div class="value">€600 Monatlich eingezahlt</div>
+            <div class="progressbar">
+              <img src="./images/progress-bar.png" />
+            </div>
+            <div class="footer-text">2/3 Raten bezahlt</div>
+          </div>
+
+          <div class="third-step">
+            <div class="title">Sie haben Ihre dritte Rate hinzugefügt</div>
+            <div class="value">€900 Monatlich eingezahlt</div>
+            <div class="footer-text">
+              <span class="image"
+                ><img src="./images/Confetti-PNG 1.png"
+              /></span>
+              <span class="label">Sie haben €300 als Belohnung erhalten</span>
+            </div>
+          </div>
+
+          <div class="fourth-step">
+            <div class="title">
+              <span class="image"
+                ><img src="./images/Confetti-PNG 1.png"
+              /></span>
+              <span class="label">Sie haben Ihr Ziel erreicht !!</span>
+            </div>
+            <div class="footer-text">
+              Jetzt können Sie Ihr Lieblingsrad kaufen!!
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-reward-ui">
+          <div class="progressbar-last-count">
+            <div>€300 + €300 + €300 = €1200!!!</div>
+          </div>
+          <div class="cycle-image">
+            <img src="./images/uyuhuy 1.svg" />
+          </div>
+
+          <div class="fourth-step">
+            <div class="title">
+              <span class="image"
+                ><img src="./images/Confetti-PNG 1.png"
+              /></span>
+              <span class="label">Sie haben Ihr Ziel erreicht !!</span>
+            </div>
+            <div class="footer-text">
+              Jetzt können Sie Ihr Lieblingsrad kaufen!!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- reward section Ends here -->
+
+      <!-- saving experience section start here -->
+      <div class="saving-experience-container">
+        <div class="container">
+          <div class="heading">
+            <h3>Die Sparerfahrung, die Sie schon immer wollten.</h3>
+          </div>
+          <div class="experience-section">
+            <div class="experience">
+              <div class="header">
+                <div class="image">
+                  <img src="./images/exp1.png" />
+                </div>
+                <div class="text">Sicher</div>
+              </div>
+              <div class="desc">
+                Ihr Geld wird bei einer in der EU und im Vereinigten Königreich
+                regulierten E-Geld-Bank geparkt. Sie können Ihr Geld jederzeit
+                abheben.
+              </div>
+            </div>
+
+            <div class="experience">
+              <div class="header">
+                <div class="image">
+                  <img src="./images/exp2.png" />
+                </div>
+                <div class="text">Geschützt</div>
+              </div>
+              <div class="desc">
+                Wir befolgen die internationalen Best Practices für die
+                Sicherheit und den Datenschutz Ihrer Daten.
+              </div>
+            </div>
+
+            <div class="experience">
+              <div class="header">
+                <div class="image">
+                  <img src="./images/exp3.png" />
+                </div>
+                <div class="text">Belohnung</div>
+              </div>
+              <div class="desc">
+                Ihre Lieblingsmarken tragen zu Ihrem Sparplan bei, während Sie
+                für große Einkäufe bei ihnen sparen.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- saving experience section ends here -->
+
+      <!-- Testimonial start here -->
+      <div class="testimonial-container">
+        <div class="container">
+          <section class="carousel" id="carousel">
+            <div class="carousel__wrapper">
+              <div>
+                <div class="carousel__content">
+                  <div class="carousel__container">
+                    <div class="carousel__slide">
+                      <div class="card">
+                        <div class="card__inner">
+                          <p>
+                            "Ich habe an der Beta von Neosave teilgenommen und
+                            Belohnungen für eine Jacke bekommen, die ich im
+                            Blick hatte ."
+                          </p>
+                          <h4>Christian Klemenz</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="carousel__slide">
+                      <div class="card">
+                        <div class="card__inner">
+                          <p>
+                            “Ich habe mich immer gefragt, warum ich, der spart,
+                            nie eine Belohnung bekomme, aber meine Freunde, die
+                            Kredite aufnehmen, bekommen eine Belohnung. ”
+                          </p>
+                          <h4>David S.</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="carousel__slide">
+                      <div class="card">
+                        <div class="card__inner">
+                          <p>
+                            “Mein Sommerurlaub war dieses Jahr dank Neosave
+                            billiger.”
+                          </p>
+                          <h4>Annika Buchmann</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="carousel__slide">
+                      <div class="card">
+                        <div class="card__inner">
+                          <p>
+                            “Ich hasse Kredite . Freue mich auf das Produkt .”
+                          </p>
+                          <h4>Mathias Strumann</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- <div class="carousel__slide">
+                      <div class="card">
+                        <div class="card__inner">
+                          <p>
+                            “I was part of Neosave beta, got rewards for a
+                            jacket I had my eyes on.”
+                          </p>
+                          <h4>Christian Klemenz</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="carousel__slide">
+                      <div class="card">
+                        <div class="card__inner">
+                          <p>
+                            “I had always wondered why I who save never get
+                            rewards but my friends who take credit get rewards.
+                            ”
+                          </p>
+                          <h4>David S.</h4>
+                        </div>
+                      </div>
+                    </div> -->
+                  </div>
+                  <div id="prev-slide" class="arrow arrow--left">
+                    <img src="./images/arrow-left.svg" />
+                  </div>
+                  <div id="next-slide" class="arrow arrow--right">
+                    <img src="./images/arrow-right.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- Testimonial ends here -->
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="heading">
+          <h3>Im Kontakt bleiben</h3>
+        </div>
+        <div class="contact">
+          <ul>
+            <li>
+              <span class="image"><img src="./images/wp.png" /></span>
+              <span class="text">Mit uns chatten</span>
+            </li>
+            <li>
+              <span class="image"><img src="./images/envalop.png" /></span>
+              <span class="text"
+                ><a style="color: #000" href="mailto:contact@neosave.club"
+                  >contact@neosave.club</a
+                ></span
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav hide-mobile">
+          <ul>
+            <!-- <li>Über uns</li> -->
+            <li><a href="./PDF/Terms of Use.pdf" target="_blank">Nutzungsbedingungen</li>
+              <li><a href="./PDF/Privacy Policy.pdf" target="_blank">Datenschutzerklarung</li>
+                <li>
+                  <a href="./PDF/Rewards Program Terms and Conditions.pdf" target="_blank"
+                    >Belohnungsbedingungen</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sub-footer">
+        <div class="container">
+          Neosave ist ein Finanztechnologieunternehmen und keine Bank. Die
+          Bankdienstleistungen werden von Paynetics angeboten. Paynetics ist ein
+          reguliertes E-Geld-Institut, das für die Erbringung seiner
+          Dienstleistungen in der EU und im Vereinigten Königreich zugelassen
+          ist. Das Prämienprogramm unterliegt den allgemeinen
+          Geschäftsbedingungen. © Neosave.
+        </div>
+      </div>
+    </footer>
   </body>
-  <script type="text/javascript" src="./js/main.js"></script>
+  <!-- <script type="text/javascript" src="./js/main.js"></script> -->
+  <script type="text/javascript" src="./js/testimonial-slider.js"></script>
+  <script type="text/javascript">
+    const toggleItems = document.getElementById('menu');
+    const toggleButton = document.getElementById('menuToggle');
+
+    (function () {
+      toggleButton.addEventListener('click', () => {
+        toggleItems.classList.toggle('hideMenu');
+      });
+    })();
+  </script>
 </html>
