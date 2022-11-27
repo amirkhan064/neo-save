@@ -37,6 +37,21 @@
   padding: 0.5rem 3rem;
 }
 
+.banner-container .headings-section a {
+  background: #201d24;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0.5rem 3rem;
+}
+
+.banner-container .headings-section a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .banner-container .banner-image {
   width: 40%;
 }
